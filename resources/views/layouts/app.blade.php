@@ -1,112 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
+
 <head>
-    <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Vitamin Cafe Uganda | @yield('title')</title>
-        <meta name="keywords" content="@yield('keywords')">
-        <meta name="description" content="@yield('desc')">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}">
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="@yield('description')" />
+<meta name="keywords" content="@yield('keywords')" />
+<meta name="author" content="@yield('author')" />
 
-        <!-- Normalize CSS -->
-        <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+<!-- Page Title -->
+<title> @yield('title') | Target Media</title>
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+<!-- Favicon and Touch Icons -->
+<link href="{{asset('assets/images/favicon.png')}}" rel="shortcut icon" type="image/png">
+<link href="{{asset('assets/images/apple-touch-icon.png')}}" rel="apple-touch-icon">
+<link href="{{asset('assets/images/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
+<link href="{{asset('assets/images/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
+<link href="{{asset('assets/images/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+<!-- Stylesheet -->
+<link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{ asset('assets/css/jquery-ui.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{ {asset('assets/css/animate.css')}}" rel="stylesheet" type="text/css">
+<link href="{{ asset('assets/css/css-plugin-collections.css')}}" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link href="{{ asset('assets/css/menuzord-megamenu.css')}}" rel="stylesheet"/>
+<link id="menuzord-menu-skins" href="{{asset('assets/css/menuzord-skins/menuzord-rounded-boxed.css')}}" rel="stylesheet"/>
+<!-- CSS | Main style file -->
+<link href="{{ asset('assets/css/style-main.css') }}" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="{{ asset('assets/css/preloader.css') }}" rel="stylesheet" type="text/css">
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="{{ asset('assets/css/custom-bootstrap-margin-padding.css') }}" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" type="text/css">
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
+<!-- Revolution Slider 5.x CSS settings -->
+<link  href="{{ asset('assets/js/revolution-slider/css/settings.css') }}" rel="stylesheet" type="text/css"/>
+<link  href="{{ asset('assets/js/revolution-slider/css/layers.css') }}" rel="stylesheet" type="text/css"/>
+<link  href="{{ asset('assets/js/revolution-slider/css/navigation.css') }}" rel="stylesheet" type="text/css"/>
 
-        <!-- Font-awesome CSS-->
-        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+<!-- CSS | Theme Color -->
+<link href="{{ asset('assets/css/colors/theme-skin-color-set2.css') }}" rel="stylesheet" type="text/css">
 
-        <!-- Owl Caousel CSS -->
-        <link rel="stylesheet" href="{{ asset('vendor/OwlCarousel/owl.carousel.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('vendor/OwlCarousel/owl.theme.default.min.css') }}">
+<!-- external javascripts -->
+<script src="{{ asset('assets/js/jquery-2.2.4.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="{{ asset('assets/js/jquery-plugin-collection.js') }}"></script>
 
-        <!-- Main Menu CSS -->
-        <link rel="stylesheet" href="{{ asset('css/meanmenu.min.css') }}">
+<!-- Revolution Slider 5.x SCRIPTS -->
+<script src="{{ asset('assets/js/revolution-slider/js/jquery.themepunch.tools.min.js') }}"></script>
+<script src="{{ asset('assets/js/revolution-slider/js/jquery.themepunch.revolution.min.js') }}"></script>
 
-        <!-- nivo slider CSS -->
-        <link rel="stylesheet" href="{{ asset('vendor/slider/css/nivo-slider.css') }}" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('vendor/slider/css/preview.css') }}" type="text/css" media="screen" />
-
-        <!-- Datetime Picker Style CSS -->
-        <link rel="stylesheet" href="{{ asset('css/jquery.datetimepicker.css') }}">
-
-        <!-- Switch Style CSS -->
-        <link rel="stylesheet" href="{{ asset('css/switch-style.css') }}">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-        <!-- Modernizr Js -->
-        <script src="{{ asset('js/modernizr-2.8.3.min.js') }}"></script>
-        @yield('scripts')
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
-<body>
-   <div class="wrapper">
-            <!-- Header Area Start Here -->
-            @include('includes.header')
-            <!-- Header Area End Here -->
-            <!-- Slider Area Start Here -->
-            @yield('content')
-            @include('includes.footer')
-            <!-- Footer Area End Here -->
 
-            <!-- Header Area End Here -->
-            <!-- Slider Area Start Here -->
+@yield('after_styles')
+<body class="">
+<div id="wrapper" class="clearfix">
+  <!-- preloader -->
 
 
+  <!-- Header -->
 
-    <!-- JavaScripts -->
+@include('includes.navs')
 
-        <!-- Preloader End Here -->
-        <!-- jquery-->
-        <script src="{{ asset('js/jquery-2.2.4.min.js') }}" type="text/javascript"></script>
+  <!-- Start main-content -->
+  @yield('content')
+  <!-- end main-content -->
+  <!-- Footer -->
+  @include('includes.footer')
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+@include('includes.scripts')
 
-        <!-- Plugins js -->
-        <script src="{{ asset('js/plugins.js') }}" type="text/javascript"></script>
-
-        <!-- Bootstrap js -->
-        <script src="{{ asset('js/bootstrap.min.js') }}" type="text/javascript"></script>
-
-        <!-- WOW JS -->
-        <script src="{{ asset('js/wow.min.js') }}"></script>
-
-        <!-- Nivo slider js -->
-        <script src="{{ asset('vendor/slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
-        <script src="{{ asset('vendor/slider/home.js') }}" type="text/javascript"></script>
-
-        <!-- Owl Cauosel JS -->
-        <script src="{{ asset('vendor/OwlCarousel/owl.carousel.min.js') }}" type="text/javascript"></script>
-
-        <!-- Meanmenu Js -->
-        <script src="{{ asset('js/jquery.meanmenu.min.js') }}" type="text/javascript"></script>
-
-        <!-- Srollup js -->
-        <script src="{{ asset('js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
-
-         <!-- jquery.counterup js -->
-        <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('js/waypoints.min.js') }}"></script>
-
-        <!-- Switch js -->
-        <script src="{{asset('js/switch-style.js')}}" type="text/javascript"></script>
-
-        <!-- Date Time Picker Js -->
-        <script src="{{ asset('js/jquery.datetimepicker.full.min.js') }}" type="text/javascript"></script>
-
-        <!-- Validator js -->
-        <script src="{{ asset('js/validator.min.js') }}" type="text/javascript"></script>
-
-        <!-- Custom Js -->
-        <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
+@yield('after_scripts')
+</body>
 
 </html>

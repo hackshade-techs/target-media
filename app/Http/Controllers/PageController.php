@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
+
 use Backpack\PageManager\app\Models\Page;
 
 class PageController extends Controller
@@ -27,10 +27,5 @@ class PageController extends Controller
 
         return view('pages.'.$page->template, $this->data);
     }
-=======
 
-class PageController extends Controller
-{
-    //
->>>>>>> 6310007e82d45ba179f992bf566a1ccc085a0836
 }
