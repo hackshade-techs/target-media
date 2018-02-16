@@ -31,24 +31,6 @@ Route::group([
     CRUD::resource('contact', 'ContactCrudController');
 });
 
-<<<<<<< HEAD
 /** CATCH-ALL ROUTE for Backpack/PageManager - needs to be at the end of your routes.php file  **/
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
     ->where(['page' => '^((?!admin).)*$', 'subs' => '.*']);
-=======
-// --------------------
-// Backpack\Demo routes
-// --------------------
-Route::group([
-    'prefix'     => config('backpack.base.route_prefix', 'admin'),
-    'middleware' => ['admin'],
-    'namespace'  => 'Admin',
-], function () {
-    // CRUD resources and other admin routes
-    CRUD::resource('service', 'ServiceCrudController');
-    CRUD::resource('order', 'OrderCrudController');
-    CRUD::resource('whatwedo', 'ServiceCrudController');
-    CRUD::resource('icon', 'IconCrudController');
-    CRUD::resource('product', 'ProductCrudController');
-});
->>>>>>> 6310007e82d45ba179f992bf566a1ccc085a0836
