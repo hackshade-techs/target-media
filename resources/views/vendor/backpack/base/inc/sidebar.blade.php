@@ -22,6 +22,19 @@
           <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
           <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i> <span>Pages</span></a></li>
 
+          <li><a href="{{  backpack_url('service') }}"><i class="fa fa-cog"></i> <span>Services</span></a></li>
+          <li><a href="{{  backpack_url('whatwedo') }}"><i class="fa fa-list"></i> <span>What We Do</span></a></li>
+          <li><a href="{{  backpack_url('order') }}"><i class="fa fa-shopping-basket"></i> <span>Orders</span></a></li>
+          <li><a href="{{  backpack_url('client') }}"><i class="fa fa-users"></i> <span>Clients</span></a></li>
+          <li><a href="{{  backpack_url('contact') }}"><i class="fa fa-comments-o"></i> <span>Feedback</span></a></li>
+
+          <li class="treeview">
+              <a href="#"><i class="fa fa-picture-o"></i> <span>Gallery</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="{{ backpack_url('album') }}"><i class="fa fa-bars"></i> <span>Album</span></a></li>
+                <li><a href="{{ backpack_url('gallery') }}"><i class="fa fa-picture-o"></i> <span>Photos</span></a></li>
+              </ul>
+          </li>
 
           <!-- Users, Roles Permissions -->
           <li class="treeview">
@@ -33,14 +46,6 @@
             </ul>
 
           </li>
-          <li><a href="{{  backpack_url('service') }}"><i class="fa fa-cog"></i> <span>Services</span></a></li>
-          <li><a href="{{  backpack_url('whatwedo') }}"><i class="fa fa-list"></i> <span>What We Do</span></a></li>
-          <li><a href="{{  backpack_url('order') }}"><i class="fa fa-shopping-basket"></i> <span>Orders</span></a></li>
-          <li><a href="{{  backpack_url('client') }}"><i class="fa fa-users"></i> <span>Clients</span></a></li>
-          <li><a href="{{  backpack_url('contact') }}"><i class="fa fa-comments-o"></i> <span>Feedback</span></a></li>
-
-
-
 
           <li class="treeview">
               <a href="#"><i class="fa fa-cogs"></i> <span>Advanced</span> <i class="fa fa-angle-left pull-right"></i></a>
