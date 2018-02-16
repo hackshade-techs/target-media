@@ -33,11 +33,11 @@
             </ul>
 
           </li>
-          <li><a href="{{  backpack_url('service') }}"><i class="fa fa-files-o"></i> <span>Services</span></a></li>
-          <li><a href="{{  backpack_url('Order') }}"><i class="fa fa-files-o"></i> <span>Orders</span></a></li>
-          <li><a href="{{  backpack_url('whatwedo') }}"><i class="fa fa-files-o"></i> <span>Orders</span></a></li>
-          <li><a href="{{  backpack_url('icon') }}"><i class="fa fa-files-o"></i> <span>Icon</span></a></li>
-            <li><a href="{{  backpack_url('product') }}"><i class="fa fa-files-o"></i> <span>Product</span></a></li>
+          <li><a href="{{  backpack_url('service') }}"><i class="fa fa-cog"></i> <span>Services</span></a></li>
+          <li><a href="{{  backpack_url('whatwedo') }}"><i class="fa fa-list"></i> <span>What We Do</span></a></li>
+          <li><a href="{{  backpack_url('order') }}"><i class="fa fa-shopping-basket"></i> <span>Orders</span></a></li>
+          <li><a href="{{  backpack_url('client') }}"><i class="fa fa-users"></i> <span>Clients</span></a></li>
+          <li><a href="{{  backpack_url('contact') }}"><i class="fa fa-comments-o"></i> <span>Feedback</span></a></li>
 
 
 

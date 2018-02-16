@@ -31,12 +31,39 @@ class WhatWeDoCrudController extends CrudController
         $this->crud->setFromDb();
 
         // ------ CRUD FIELDS
+        $this->crud->addField([
+            'label' => "Icon",
+            'name' => 'icon',
+            'type' => 'icon_picker',
+            'iconset' => 'fontawesome' // options: fontawesome, glyphicon, ionicon, weathericon, mapicon, octicon, typicon, elusiveicon, materialdesign
+        ]);
+
+        $this->crud->addField([
+          'name' => 'image',
+          'label' => 'Image',
+          'type' => 'browse'
+
+        ]);
+
+        $this->crud->addField([   // WYSIWYG Editor
+            'name' => 'description',
+            'label' => 'Description',
+            'type' => 'wysiwyg'
+        ]);
+
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
         // $this->crud->removeField('name', 'update/create/both');
         // $this->crud->removeFields($array_of_names, 'update/create/both');
 
         // ------ CRUD COLUMNS
+        $this->crud->addColumn([
+          'name' => 'image',
+          'label' => 'Image',
+          'type' => 'browse'
+        ]);
+
+        $this->crud->removeColumn('description');
         // $this->crud->addColumn(); // add a single column, at the end of the stack
         // $this->crud->addColumns(); // add multiple columns, at the end of the stack
         // $this->crud->removeColumn('column_name'); // remove a column from the stack
