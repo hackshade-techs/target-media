@@ -25,7 +25,9 @@ class OrderRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'service' => 'required|max:255',
+            'estimated_budget' => 'max:255',
+            'quantity' => 'required|max:255',
         ];
     }
 
