@@ -18,7 +18,7 @@ class Gallery extends Model
     //protected $table = 'gallerys';
     //protected $primaryKey = 'id';
     // public $timestamps = false;
-    // protected $guarded = ['id'];
+    protected $guarded = ['id'];
     // protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
@@ -34,6 +34,11 @@ class Gallery extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+
+    public function album()
+    {
+      return $this->belongsTo('App\Models\Album');
+    }
 
     /*
     |--------------------------------------------------------------------------
