@@ -30,6 +30,21 @@ class ServiceCrudController extends CrudController
 
         $this->crud->setFromDb();
 
+        $this->crud->addField([
+
+            'name' => 'image',
+            'label' => 'Image',
+            'type' => 'browse'
+
+            ]);
+        $this->crud->addColumn([
+
+            'name' => 'image',
+            'label' => 'Image',
+            'type' => 'browse'
+
+            ]);
+
         // ------ CRUD FIELDS
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
