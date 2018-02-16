@@ -30,7 +30,16 @@
               <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/role') }}"><i class="fa fa-group"></i> <span>Roles</span></a></li>
               <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/permission') }}"><i class="fa fa-key"></i> <span>Permissions</span></a></li>
             </ul>
+
           </li>
+          <li><a href="{{  backpack_url('service') }}"><i class="fa fa-files-o"></i> <span>Services</span></a></li>
+          <li><a href="{{  backpack_url('Order') }}"><i class="fa fa-files-o"></i> <span>Orders</span></a></li>
+          <li><a href="{{  backpack_url('whatwedo') }}"><i class="fa fa-files-o"></i> <span>Orders</span></a></li>
+          <li><a href="{{  backpack_url('icon') }}"><i class="fa fa-files-o"></i> <span>Icon</span></a></li>
+            <li><a href="{{  backpack_url('product') }}"><i class="fa fa-files-o"></i> <span>Product</span></a></li>
+
+
+
 
           <li><a href="{{  backpack_url('elfinder') }}"><i class="fa fa-files-o"></i> <span>File manager</span></a></li>
           <li><a href="{{ backpack_url('backup') }}"><i class="fa fa-hdd-o"></i> <span>Backups</span></a></li>
