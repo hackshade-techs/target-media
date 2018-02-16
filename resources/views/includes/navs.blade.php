@@ -61,7 +61,7 @@
 
               </ul>
             </li>
-            <li><a href="#">What We Do</span></a>
+            <li><a href="#">Services</span></a>
               <ul class="dropdown">
                 <li><a href="features-preloader.html">Graphics Design </a></li>
                 <li><a href="features-preloader.html">Printing</a></li>

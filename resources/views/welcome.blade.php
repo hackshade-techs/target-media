@@ -10,13 +10,13 @@
 
 @endsection
 
-@section('content')
+
 
 @section('after_styles')
 
 @endsection
 
-
+@section('content')
 <div class="main-content">
   <!-- Section: home -->
   <section id="home">
