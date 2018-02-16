@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Mail\Order as OrderFeedback;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -36,51 +37,21 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         Order::create(request()->all());
-        return back()->withSuccess('Your order has been submitted successfully, thanks');
+
+        try {
+
+             $this->sendMail(request()->all());
+
+         } catch (\Exception $e) {
+             return back()->withFail('Sending Mail Failed, this is a problem with your internet connection, please try agin later');
+         }
+
+         return back()->withSuccess('Your order has been submitted successfully, thanks');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Order  $order
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Order $order)
+    public function sendMail($data)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Order  $order
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Order $order)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Order  $order
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Order $order)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Order  $order
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Order $order)
-    {
-        //
+        $recepient = ['hackshadetechs@gmail.com'];
+        Mail::to($recepient)->send(new OrderFeedback($data));
     }
 }

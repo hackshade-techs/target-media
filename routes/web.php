@@ -29,6 +29,7 @@ Route::group([
     CRUD::resource('album', 'AlbumCrudController');
     CRUD::resource('gallery', 'GalleryCrudController');
     CRUD::resource('contact', 'ContactCrudController');
+    CRUD::resource('slide', 'SlideCrudController');
 });
 Route::get('/services','PageController@services');
 

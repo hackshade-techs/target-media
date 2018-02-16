@@ -4,12 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
-use Cviebrock\EloquentSluggable\Sluggable;
 
-class Gallery extends Model
+class Slide extends Model
 {
     use CrudTrait;
-    use Sluggable;
 
      /*
     |--------------------------------------------------------------------------
@@ -17,10 +15,10 @@ class Gallery extends Model
     |--------------------------------------------------------------------------
     */
 
-    //protected $table = 'gallerys';
+    //protected $table = 'slides';
     //protected $primaryKey = 'id';
     // public $timestamps = false;
-    protected $guarded = ['id'];
+    // protected $guarded = ['id'];
     // protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
@@ -31,21 +29,11 @@ class Gallery extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function galleryImages()
-    {
-      return Gallery::all();
-    }
-
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-
-    public function album()
-    {
-      return $this->belongsTo('App\Models\Album');
-    }
 
     /*
     |--------------------------------------------------------------------------
@@ -64,18 +52,4 @@ class Gallery extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-
-    /**
-     * Return the sluggable configuration array for this model.
-     *
-     * @return array
-     */
-    public function sluggable()
-    {
-        return [
-            'slug' => [
-                'source' => 'title'
-            ]
-        ];
-    }
 }

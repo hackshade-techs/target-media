@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class WhatWeDoRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
+class SlideRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,9 +25,7 @@ class WhatWeDoRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
     public function rules()
     {
         return [
-          'title' => 'required|max:255',
-          'image' => 'max:255',
-          'icon' => 'max:255'
+            // 'name' => 'required|min:5|max:255'
         ];
     }
 
