@@ -1,159 +1,198 @@
-@extends('layouts.app')
 
+@extends('layouts.app')
 @section('title')
-    {{ $page->meta_title }}
+  Contact Us
+@endsection
+@section('keywords')
+
 @endsection
 
-@section('keywords') 
-	{{ $page->meta_keywords }}
-@endsection 
+@section('description')
 
-@section('desc') 
-	{{ $page->meta_description }}
-@endsection 
+@endsection
+
+
+
+@section('after_styles')
+
+@endsection
 
 @section('content')
 
-<!-- Inner Page Banner Area Start Here -->
-<div class="inner-page-banner-area" style="background: url(img/inner-page-banner.jpg);">
-	<div class="container">
-		<div class="pagination-area">
-			<h2>Contact Us</h2>
-			<ul>
-				<li>
-					<a href="{{ url('/') }}">Home -</a> /</li>
-				<li>Contact</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<!-- Inner Page Banner Area End Here -->
-<!-- Contact Us Page Area Start Here -->
-<div class="contact-us-page-area section-space">
-	<div class="container">
-		<!--<div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">   
-                <div class="google-map-area">                               
-                    <div id="googleMap" style="width:100%; height:395px;"></div>
-                </div>
-            </div>
-        </div>-->
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-				<div class="contact-us-left">
-					<h2 class="title-bar-medium-left inner-sub-title">information</h2>
-					<ul>
-						<li>
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							<h3>Phone</h3>
-							<p>+256-782-123-165</p>
-						</li>
-						<li>
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<h3>Address</h3>
-							<p>PO Box 1212, Entebbe, Uganda.</p>
-						</li>
-						<li>
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							<h3>E-mail</h3>
-							<p>papatyaozturkg@gmail.com</p>
-						</li>
-						<li>
-							<i class="fa fa-share-alt" aria-hidden="true"></i>
-							<h3>Follow Us</h3>
-							<ul class="contact-social">
-								<li>
-									<a href="#">
-										<i class="fa fa-facebook" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-linkedin" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-pinterest" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-rss" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-google-plus" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div class="contact-us-right">
-					<h2 class="title-bar-medium-left inner-sub-title">Send Us A Massege</h2>
-					<div class="contact-form">
-						@include('includes.success')
-						@include('includes.errors')
-						@include('includes.error')
-						<form action="{{ route('contacts.store') }}" enctype="multipart/form-data" method="POST">
-							{{ csrf_field() }}
-							<fieldset>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="form-group">
-											<input type="text" placeholder="Name*" class="form-control" name="name" id="form-name" data-error="Name field is required"
-											 required>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-group">
-											<input type="email" placeholder="Email*" class="form-control" name="email" id="form-email" data-error="Email field is required"
-											 required>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-sm-12">
-										<div class="form-group">
-											<input type="text" placeholder="Subject*" class="form-control" name="subject" id="form-subject" data-error="Subject field is required"
-											 required>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-sm-12">
-										<div class="form-group">
-											<textarea placeholder="Message*" class="textarea form-control" name="message" id="form-message" rows="7" cols="20" data-error="Message field is required"
-											 required></textarea>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-										<div class="form-group margin-bottom-none">
-											<button type="submit" class="ghost-on-hover-btn">Send</button>
-										</div>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-sm-12">
-										<div class='form-response'></div>
-									</div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Contact Us Page Area End Here -->
 
+  <!-- Start main-content -->
+  <div class="main-content">
+
+    <!-- Section: inner-header -->
+    <section class="inner-header divider layer-overlay overlay-dark-4" data-bg-img="assets/images/bg/bg1.jpg">
+      <div class="container pt-120 pb-60">
+        <!-- Section Content -->
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="text-theme-colored2 font-36">Contact</h2>
+              <ol class="breadcrumb text-left mt-10 white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li class="active">Current Page</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Google Map -->
+    <section>
+      <div class="container-fluid pt-0 pb-0">
+        <div class="row">
+
+          <!-- Google Map HTML Codes -->
+          <div
+            data-address="121 King Street, Melbourne Victoria 3000 Australia"
+            data-popupstring-id="#popupstring1"
+            class="map-canvas autoload-map"
+            data-mapstyle="style2"
+            data-height="400"
+            data-latlng="-37.817314,144.955431"
+            data-title="sample title"
+            data-zoom="12"
+            data-marker="assets/images/map-marker.png">
+          </div>
+          <div class="map-popupstring hidden" id="popupstring1">
+            <div class="text-center">
+              <h3>ThemeMascot Office</h3>
+              <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+            </div>
+          </div>
+          <!-- Google Map Javascript Codes -->
+          <script src="http://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
+          <script src="js/google-map-init.js"></script>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Contact -->
+    <section class="divider">
+      <div class="container">
+        <div class="row pt-30">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
+                  <div class="media-body">
+                    <h5 class="mt-0">Our Office Location</h5>
+                    <p>#405, Lan Streen, Los Vegas, USA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
+                  <div class="media-body">
+                    <h5 class="mt-0">Contact Number</h5>
+                    <p>+325 12345 65478</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
+                  <div class="media-body">
+                    <h5 class="mt-0">Email Address</h5>
+                    <p>supporte@yourdomin.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
+                  <div class="media-body">
+                    <h5 class="mt-0">Make a Video Call</h5>
+                    <p>ThemeMascotSkype</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3 class="line-bottom mt-0 mb-30">Interested in discussing?</h3>
+            <!-- Contact Form -->
+            <form id="contact_form" name="contact_form" class="" action="http://thememascot.net/demo/personal/j/consulting-pro/demo/includes/sendmail.php" method="post">
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label>Name <small>*</small></label>
+                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name" required="">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label>Email <small>*</small></label>
+                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Subject <small>*</small></label>
+                    <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Message</label>
+                <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5" data-loading-text="Please wait...">Send your message</button>
+                <button type="reset" class="btn btn-default btn-flat btn-theme-colored">Reset</button>
+              </div>
+            </form>
+
+            <!-- Contact Form Validation-->
+            <script type="text/javascript">
+              $("#contact_form").validate({
+                submitHandler: function(form) {
+                  var form_btn = $(form).find('button[type="submit"]');
+                  var form_result_div = '#form-result';
+                  $(form_result_div).remove();
+                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                  var form_btn_old_msg = form_btn.html();
+                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                  $(form).ajaxSubmit({
+                    dataType:  'json',
+                    success: function(data) {
+                      if( data.status == 'true' ) {
+                        $(form).find('.form-control').val('');
+                      }
+                      form_btn.prop('disabled', false).html(form_btn_old_msg);
+                      $(form_result_div).html(data.message).fadeIn('slow');
+                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                    }
+                  });
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+
+
+@endsection
+
+@section('after_scripts')
 
 @endsection

@@ -1,141 +1,222 @@
-@extends('layouts.app')
 
+@extends('layouts.app')
 @section('title')
-    {{ $page->meta_title }}
+  About Us
+@endsection
+@section('keywords')
+
 @endsection
 
-@section('keywords') 
-	{{ $page->meta_keywords }}
-@endsection 
+@section('description')
 
-@section('desc') 
-	{{ $page->meta_description }}
-@endsection 
+@endsection
+
+
+
+@section('after_styles')
+
+@endsection
 
 @section('content')
 
-<!-- Inner Page Banner Area Start Here -->
-<div class="inner-page-banner-area" style="background: url(img/inner-page-banner.jpg);">
-	<div class="container">
-		<div class="pagination-area">
-			<h2>About Us</h2>
-			<ul>
-				<li>
-					<a href="{{ url('/') }}">Home -</a> /</li>
-				<li>About</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<!-- Inner Page Banner Area End Here -->
-<!-- About Page Area Start Here -->
-<div class="about-page-area">
-	<img src="img/about1-bottom-back.png" class="img-responsive" alt="about1-bottom-back">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				<div class="about-page-left">
-					<h2>About Us</h2>
-					<p>
-						<span>
-							<span>2007</span> Vitamin cafe was established in 2007, we do indoors and outside catering, and vitamin cafe has space for
-							celebrating all kinds of parties as it has the favourable grounds for such events. We have experience of 3years, in
-							the UN(united nations) Entebbe base , we specialise in Turkish Kebaps,Mezes, and contintinental food.</p>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				<div class="about-page-right">
-					<div class="rc-carousel" data-loop="true" data-items="1" data-margin="15" data-autoplay="true" data-autoplay-timeout="10000"
-					 data-smart-speed="2000" data-dots="true" data-nav="false" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="false"
-					 data-r-x-small-dots="true" data-r-x-medium="1" data-r-x-medium-nav="false" data-r-x-medium-dots="true" data-r-small="1"
-					 data-r-small-nav="false" data-r-small-dots="true" data-r-medium="1" data-r-medium-nav="false" data-r-medium-dots="true">
-						<div class="about-page-img-holder">
-							<img src="img/default/abou.png" class="img-responsive" alt="about1-banner">
-						</div>
-						<div class="about-page-img-holder">
-							<img src="img/default/about2.jpg" class="img-responsive" alt="about1-banner">
-						</div>
-						<div class="about-page-img-holder">
-							<img src="img/default/about3.jpg" class="img-responsive" alt="about1-banner">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="about-page-bottom">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="about-page-bottom-box border-right wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
-						<div class="media">
-							<a href="#" class="pull-left">
-								<i class="flaticon-verified-protection"></i>
-							</a>
-							<div class="media-body">
-								<h3>
-									<a href="#">We Are Certified</a>
-								</h3>
-								<p>We deal in proffesional indoor and outside catering .</p>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="about-page-bottom-box wow zoomIn" data-wow-duration="2s" data-wow-delay="1.5s">
-						<div class="media">
-							<a href="#" class="pull-left">
-								<i class="flaticon-coffee-cup"></i>
-							</a>
-							<div class="media-body">
-								<h3>
-									<a href="#">Cup Of Coffee</a>
-								</h3>
-								<p>We have delicious tea that you can access at our cafe.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- About Page Area End Here -->
-<!-- Award Area Start Here -->
-<div class="award1-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-smile-o" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="5030">5030</h2>
-					<p>Happy Clients</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-heart-o" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="2030">2030</h2>
-					<p>Love People</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-coffee" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="3030">3030</h2>
-					<p>Cup Of Coffee</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-book" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="4320">4320</h2>
-					<p>Chef Recipes</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Award Area End Here -->
 
+<!-- Start main-content -->
+<div class="main-content">
+  <!-- Section: inner-header -->
+  <section class="inner-header divider layer-overlay overlay-dark-4" data-bg-img="assets/images/bg/bg1.jpg">
+    <div class="container pt-120 pb-60">
+      <!-- Section Content -->
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-theme-colored2 font-36">About</h2>
+            <ol class="breadcrumb text-left mt-10 white">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li class="active">Current Page</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section About -->
+  <section>
+    <div class="container">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-uppercasetext-theme-colored mt-0">About <span class="text-theme-color-2">ConsultingPro</span></h2>
+            <div class="diamond-line-left-theme-colored-2"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptatem maiores eaque similique non distinctio voluptates perspiciatis omnis, repellendus ipsa aperiam, laudantium voluptatum nulla<a class="text-theme-color-2 font-13 ml-5" href="#">read more →</a></p>
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="font-weight-600">Our Mission</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita porro ipsa, nulla alias ab minus consequatur repellendus deserunt iste! Dolorum vero</p>
+                <a href="#" class="btn btn-theme-colored2 btn-flat btn-sm mt-10 mr-15 mb-sm-20">Read more</a>
+              </div>
+              <div class="col-md-6">
+                <h4 class="font-weight-600">Our Vission</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita porro ipsa, nulla alias ab minus consequatur repellendus deserunt iste! Dolorum vero</p>
+                <a href="#" class="btn btn-theme-colored2 btn-flat btn-sm mt-10">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box-hover-effect about-video mt-sm-30">
+              <div class="effect-wrapper">
+                <div class="thumb">
+                  <img class="img-fullwidth" src="assets/images/about/1.jpg" alt="project">
+                </div>
+                <div class="video-button"></div>
+                <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?v=F3QpgXBtDeo" title="Youtube Video">Youtube Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider: Funfact -->
+  <section class="layer-overlay overlay-theme-colored-9" data-bg-img="assets/images/bg/bg1.jpg">
+    <div class="container pt-40 pb-sm-30">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h2 class="text-white">See Our Awesome Funfacts</h2>
+          <div class="diamond-line-centered-theme-colored2"></div>
+          <p class="font-16 text-white mt-0 mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt.</p>
+        </div>
+      </div>
+      <div class="row mt-30 text-center">
+        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+          <div class="funfact">
+            <i class="pe-7s-smile mb-20 text-white"></i>
+            <h2 data-animation-duration="2000" data-value="754" class="animate-number text-white font-42 font-weight-600 mt-0 mb-15">0</h2>
+            <h5 class="text-white text-uppercase">Happy Clients</h5>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+          <div class="funfact">
+            <i class="pe-7s-notebook mb-20 text-white"></i>
+            <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white font-42 font-weight-600 mt-0 mb-15">0</h2>
+            <h5 class="text-white text-uppercase">Years of Experience</h5>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+          <div class="funfact">
+            <i class="pe-7s-users mb-20 text-white"></i>
+            <h2 data-animation-duration="2000" data-value="675" class="animate-number text-white font-42 font-weight-600 mt-0 mb-15">0</h2>
+            <h5 class="text-white text-uppercase">Cases completed</h5>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+          <div class="funfact">
+            <i class="pe-7s-study mb-20 text-white"></i>
+            <h2 data-animation-duration="2000" data-value="1248" class="animate-number text-white font-42 font-weight-600 mt-0 mb-15">0</h2>
+            <h5 class="text-white text-uppercase">Awards winning</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Team -->
+  <section id="team" class="bg-silver-light">
+    <div class="container pb-50">
+      <div class="section-title text-center">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="text-uppercase title">Meet Our<span class="text-theme-colored2"> Team</span></h2>
+            <div class="diamond-line-centered-theme-colored2"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="single-member maxwidth400 mb-30">
+              <div class="team-thumb">
+                <img src="assets/images/team/1.jpg" alt="" class="img-fullwidth">
+                <h4 class="text-uppercase font-raleway text-white font-16 line-bottom-center m-0">Oliver Queen <span class="text-white font-12 ml-5">- Founder</span></h4>
+              </div>
+              <div class="team-bottom-part bg-white p-15">
+                <p class="mb-10">Lorem ipsum dolorsit amet consecte turadip isior ipsum dolor sit ametor ipsum dolor sit amet conse</p>
+                <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled mt-15">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="single-member maxwidth400 mb-30">
+              <div class="team-thumb">
+                <img src="assets/images/team/2.jpg" alt="" class="img-fullwidth">
+                <h4 class="text-uppercase font-raleway text-white font-16 line-bottom-center m-0">Oliver Queen <span class="text-white font-12 ml-5">- Founder</span></h4>
+              </div>
+              <div class="team-bottom-part bg-white p-15">
+                <p class="mb-10">Lorem ipsum dolorsit amet consecte turadip isior ipsum dolor sit ametor ipsum dolor sit amet conse</p>
+                <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled mt-15">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="single-member maxwidth400 mb-30">
+              <div class="team-thumb">
+                <img src="assets/images/team/3.jpg" alt="" class="img-fullwidth">
+                <h4 class="text-uppercase font-raleway text-white font-16 line-bottom-center m-0">Oliver Queen <span class="text-white font-12 ml-5">- Founder</span></h4>
+              </div>
+              <div class="team-bottom-part bg-white p-15">
+                <p class="mb-10">Lorem ipsum dolorsit amet consecte turadip isior ipsum dolor sit ametor ipsum dolor sit amet conse</p>
+                <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled mt-15">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="single-member maxwidth400 mb-30">
+              <div class="team-thumb">
+                <img src="assets/images/team/4.jpg" alt="" class="img-fullwidth">
+                <h4 class="text-uppercase font-raleway text-white font-16 line-bottom-center m-0">Oliver Queen <span class="text-white font-12 ml-5">- Founder</span></h4>
+              </div>
+              <div class="team-bottom-part bg-white p-15">
+                <p class="mb-10">Lorem ipsum dolorsit amet consecte turadip isior ipsum dolor sit ametor ipsum dolor sit amet conse</p>
+                <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled mt-15">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- end main-content -->
+
+
+
+@endsection
+
+@section('after_scripts')
 
 @endsection

@@ -33,6 +33,10 @@ Route::group([
 });
 Route::get('/services','PageController@services');
 Route::get('/services_detail','PageController@service_detail');
+Route::get('/whatwedo','PageController@whatwedo');
+Route::get('/whatwedo_detail','PageController@whatwedo_detail');
+Route::get('/contact','PageController@contact');
+Route::get('/about','PageController@about');
 
 /** CATCH-ALL ROUTE for Backpack/PageManager - needs to be at the end of your routes.php file  **/
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])

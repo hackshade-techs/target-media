@@ -36,6 +36,22 @@ class PageController extends Controller
     {
       return view('pages.service_detail');
     }
+    public function whatwedo()
+    {
+      return view('pages.whatwedo');
+    }
+    public function whatwedo_detail()
+    {
+      return view('pages.whatwedo_detail');
+    }
+    public function contact()
+    {
+      return view('pages.contact_us');
+    }
+    public function about()
+    {
+      return view('pages.about_us');
+    }
 
 
 }
