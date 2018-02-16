@@ -5,9 +5,9 @@
         <div class="col-md-6">
           <div class="widget text-white">
             <ul class="list-inline xs-text-center text-white">
-              <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-white"></i> 123-456-789</a> </li>
+              <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-white"></i> +256 772 651714</a> </li>
               <li class="m-0 pl-10 pr-10">
-                <a href="#" class="text-white"><i class="fa fa-envelope-o text-white mr-5"></i> contact@yourdomain.com</a>
+                <a href="#" class="text-white"><i class="fa fa-envelope-o text-white mr-5"></i> ambroselli@afrosoftug.com</a>
               </li>
             </ul>
           </div>
@@ -43,7 +43,7 @@
             <img class="logo-scrolled-to-fixed" src="assets/images/logo-wide.png" alt="">
           </a>
           <ul class="menuzord-menu">
-            <li class="active" ><a href="#home">Home</a>
+            <li class="active" ><a href="{{ url('/') }}">Home</a>
 
             </li>
             <li><a href="#">About Us</span></a>
@@ -97,7 +97,7 @@
 
 
             <li title="follow to access bloggin platform"><a href="#">Blog</a>
-              <li title="follow to access bloggin platform"><a href="#">Contact</a>
+              <li title="follow to access bloggin platform"><a href="{{ url('contact') }}">Contact</a>
 
             </li>
               <li class="active" ><a href="#home">Order Now!</a>
