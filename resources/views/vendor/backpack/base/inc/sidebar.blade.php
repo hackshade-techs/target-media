@@ -27,6 +27,7 @@
           <li><a href="{{  backpack_url('order') }}"><i class="fa fa-shopping-basket"></i> <span>Orders</span></a></li>
           <li><a href="{{  backpack_url('client') }}"><i class="fa fa-users"></i> <span>Clients</span></a></li>
           <li><a href="{{  backpack_url('contact') }}"><i class="fa fa-comments-o"></i> <span>Feedback</span></a></li>
+          <li><a href="{{  backpack_url('slide') }}"><i class="fa fa-image"></i> <span>Slides</span></a></li>
 
           <li class="treeview">
               <a href="#"><i class="fa fa-picture-o"></i> <span>Gallery</span> <i class="fa fa-angle-left pull-right"></i></a>

@@ -29,6 +29,7 @@ Route::group([
     CRUD::resource('album', 'AlbumCrudController');
     CRUD::resource('gallery', 'GalleryCrudController');
     CRUD::resource('contact', 'ContactCrudController');
+    CRUD::resource('slide', 'SlideCrudController');
 });
 
 /** CATCH-ALL ROUTE for Backpack/PageManager - needs to be at the end of your routes.php file  **/

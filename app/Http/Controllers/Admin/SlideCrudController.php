@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Admin;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 // VALIDATION: change the requests to match your own file names if you need form validation
-use App\Http\Requests\GalleryRequest as StoreRequest;
-use App\Http\Requests\GalleryRequest as UpdateRequest;
+use App\Http\Requests\SlideRequest as StoreRequest;
+use App\Http\Requests\SlideRequest as UpdateRequest;
 
-class GalleryCrudController extends CrudController
+class SlideCrudController extends CrudController
 {
     public function setup()
     {
@@ -18,9 +18,9 @@ class GalleryCrudController extends CrudController
         | BASIC CRUD INFORMATION
         |--------------------------------------------------------------------------
         */
-        $this->crud->setModel('App\Models\Gallery');
-        $this->crud->setRoute(config('backpack.base.route_prefix') . '/gallery');
-        $this->crud->setEntityNameStrings('gallery', 'galleries');
+        $this->crud->setModel('App\Models\Slide');
+        $this->crud->setRoute(config('backpack.base.route_prefix') . '/slide');
+        $this->crud->setEntityNameStrings('slide', 'slides');
 
         /*
         |--------------------------------------------------------------------------
@@ -31,35 +31,12 @@ class GalleryCrudController extends CrudController
         $this->crud->setFromDb();
 
         // ------ CRUD FIELDS
-        $this->crud->addField([  // Select2
-           'label' => "Album",
-           'type' => 'select2',
-           'name' => 'album_id', // the db column for the foreign key
-           'entity' => 'album', // the method that defines the relationship in your Model
-           'attribute' => 'name', // foreign key attribute that is shown to user
-           'model' => "App\Models\Album" // foreign key model
-        ]);
-
-        $this->crud->addField([   // WYSIWYG Editor
-            'name' => 'description',
-            'label' => 'Description',
-            'type' => 'wysiwyg'
-        ]);
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
         // $this->crud->removeField('name', 'update/create/both');
         // $this->crud->removeFields($array_of_names, 'update/create/both');
 
         // ------ CRUD COLUMNS
-        $this->crud->addColumn([
-           // 1-n relationship
-           'label' => "Album", // Table column heading
-           'type' => "select",
-           'name' => 'album_id', // the column that contains the ID of that connected entity;
-           'entity' => 'album', // the method that defines the relationship in your Model
-           'attribute' => "name", // foreign key attribute that is shown to user
-           'model' => "App\Models\Album", // foreign key model
-        ]);
         // $this->crud->addColumn(); // add a single column, at the end of the stack
         // $this->crud->addColumns(); // add multiple columns, at the end of the stack
         // $this->crud->removeColumn('column_name'); // remove a column from the stack

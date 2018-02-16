@@ -3,29 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Mail\Contact as ContactFeedback;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -36,51 +18,25 @@ class ContactController extends Controller
     public function store(Request $request)
     {
       Contact::create(request()->all());
-      return back()->withSuccess('Your feedback has been submitted successfully, thanks');
+
+
+      try {
+
+           $this->sendMail(request()->all());
+
+       } catch (\Exception $e) {
+           return back()->withFail('Sending Mail Failed, this is a problem with your internet connection, please try agin later');
+       }
+
+       return back()->withSuccess('Your feedback has been submitted successfully, thanks');
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Contact $contact)
+    public function sendMail($data)
     {
-        //
+        $recepient = ['hackshadetechs@gmail.com'];
+        Mail::to($recepient)->send(new ContactFeedback($data));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Contact $contact)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Contact $contact)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Contact  $contact
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Contact $contact)
-    {
-        //
-    }
 }
