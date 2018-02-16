@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PageController@welcome');
+Route::get('/services/{slug}', 'ServiceController@show');
 
 // --------------------
 // Backpack\Demo routes

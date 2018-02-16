@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Gallery;
+use App\Models\Service;
 use Illuminate\Support\ServiceProvider;
 
 class ComposerServiceProvider extends ServiceProvider
@@ -18,8 +19,8 @@ class ComposerServiceProvider extends ServiceProvider
           $view->with('images', Gallery::galleryImages());
       });
 
-      view()->composer('composers.review', function($view) {
-          $view->with('reviews', Review::reviews());
+      view()->composer('composers.service', function($view) {
+          $view->with('services', Service::services());
       });
 
       view()->composer('composers.slide', function($view) {
