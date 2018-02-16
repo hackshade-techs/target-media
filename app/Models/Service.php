@@ -30,6 +30,10 @@ class Service extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
+    public static function services()
+    {
+      return Service::all();
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -67,5 +71,10 @@ class Service extends Model
                 'source' => 'title'
             ]
         ];
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }
