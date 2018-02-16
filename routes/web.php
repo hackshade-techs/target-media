@@ -32,6 +32,7 @@ Route::group([
     CRUD::resource('slide', 'SlideCrudController');
 });
 Route::get('/services','PageController@services');
+Route::get('/services_detail','PageController@service_detail');
 
 /** CATCH-ALL ROUTE for Backpack/PageManager - needs to be at the end of your routes.php file  **/
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])

@@ -32,5 +32,10 @@ class PageController extends Controller
     {
       return view('pages.services');
     }
+    public function service_detail()
+    {
+      return view('pages.service_detail');
+    }
+
 
 }
