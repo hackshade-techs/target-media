@@ -6,7 +6,7 @@
       <!-- SLIDE 1 -->
       <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/images/bg/bg1.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
         <!-- MAIN IMAGE -->
-        <img src="assets/images/bg/bg1.jpg" alt="" data-bgposition="center 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+        <img src="assets/images/slider/slidetwo.jpg" alt="" data-bgposition="center 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
         <!-- LAYERS -->
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-1"
@@ -38,7 +38,8 @@
           data-whitespace="normal"
           data-frames='[{"from":"y:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
           data-responsive_offset="on"
-          style="z-index: 5; white-space: nowrap;">AMBROSOLI WONDERS
+          style="z-index: 5; white-space: nowrap;">
+          <!-- TARGET MEDIA -->
         </div>
         <!-- LAYER NR. 3 -->
         <div class="tp-caption tp-resizeme text-center text-white rs-parallaxlevel-0"
@@ -53,7 +54,8 @@
           data-height="none"
           data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
           data-responsive_offset="on"
-          style="z-index: 5; white-space: nowrap;">Unlimitted Creativity
+          style="z-index: 5; white-space: nowrap;">
+          <!-- Unlimitted Creativity -->
         </div>
         <!-- LAYER NR. 4 -->
         <div class="tp-caption rs-parallaxlevel-0"
@@ -72,7 +74,7 @@
       <!-- SLIDE 2 -->
       <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/images/bg/bg2.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
         <!-- MAIN IMAGE -->
-        <img src="assets/images/bg/bg2.jpg" alt="" data-bgposition="center 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+        <img src="assets/images/slider/slidethree.jpg" alt="" data-bgposition="center 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
         <!-- LAYERS -->
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-1"
@@ -104,7 +106,8 @@
           data-whitespace="normal"
           data-frames='[{"from":"y:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
           data-responsive_offset="on"
-          style="z-index: 5; white-space: nowrap;">  ADVERTISING EXPERTS
+          style="z-index: 5; white-space: nowrap;">
+           <!-- ADVERTISING EXPERTS -->
         </div>
         <!-- LAYER NR. 3 -->
         <div class="tp-caption tp-resizeme text-center text-white rs-parallaxlevel-0"
@@ -119,7 +122,8 @@
           data-height="none"
           data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
           data-responsive_offset="on"
-          style="z-index: 5; white-space: nowrap;">We provides you with the best adversing touch for your business.
+          style="z-index: 5; white-space: nowrap;">
+          <!-- We provides you with the best adversing touch for your business. -->
         </div>
         <!-- LAYER NR. 4 -->
         <div class="tp-caption rs-parallaxlevel-0"
@@ -138,7 +142,7 @@
       <!-- SLIDE 1 -->
       <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/bg/bg3.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
         <!-- MAIN IMAGE -->
-        <img src="assets/images/bg/bg3.jpg" alt="" data-bgposition="center 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+        <img src="assets/images/slider/slidefive.jpg" alt="" data-bgposition="center 30%" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
         <!-- LAYERS -->
         <!-- LAYER NR. 1 -->
         <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-1"
@@ -170,7 +174,8 @@
           data-whitespace="normal"
           data-frames='[{"from":"y:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
           data-responsive_offset="on"
-          style="z-index: 5; white-space: nowrap;">standard printing works
+          style="z-index: 5; white-space: nowrap;">
+          <!-- standard printing works -->
         </div>
         <!-- LAYER NR. 3 -->
         <div class="tp-caption tp-resizeme text-center text-white rs-parallaxlevel-0"
@@ -185,7 +190,8 @@
           data-height="none"
           data-frames='[{"from":"x:-50px;opacity:0;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
           data-responsive_offset="on"
-          style="z-index: 5; white-space: nowrap;">We have best printing works on T-Shirts, Billboard Prints  and more
+          style="z-index: 5; white-space: nowrap;">
+          <!-- We have best printing works on T-Shirts, Billboard Prints  and more -->
         </div>
         <!-- LAYER NR. 4 -->
         <div class="tp-caption rs-parallaxlevel-0"

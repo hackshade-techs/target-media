@@ -24,7 +24,7 @@
   <div class="main-content">
 
     <!-- Section: inner-header -->
-    <section class="inner-header divider layer-overlay overlay-dark-4" data-bg-img="assets/images/bg/bg1.jpg">
+    <section class="inner-header divider layer-overlay overlay-dark-4" data-bg-img="assets/images/slider/slidetwo.jpg">
       <div class="container pt-120 pb-60">
         <!-- Section Content -->
         <div class="section-content">
@@ -34,7 +34,7 @@
               <ol class="breadcrumb text-left mt-10 white">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pages</a></li>
-                <li class="active">Current Page</li>
+                <li class="active">Contact </li>
               </ol>
             </div>
           </div>
@@ -83,7 +83,7 @@
                 <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
                   <div class="media-body">
                     <h5 class="mt-0">Our Office Location</h5>
-                    <p>#405, Lan Streen, Los Vegas, USA</p>
+                    <p>Media House . Jebel Rd Before National Security Hqs</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@
                 <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
                   <div class="media-body">
                     <h5 class="mt-0">Contact Number</h5>
-                    <p>+325 12345 65478</p>
+                    <p>+211 912 312 228</p>
                   </div>
                 </div>
               </div>
@@ -99,15 +99,15 @@
                 <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
                   <div class="media-body">
                     <h5 class="mt-0">Email Address</h5>
-                    <p>supporte@yourdomin.com</p>
+                    <p> info@targetmedia.biz</p>
                   </div>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-12">
                 <div class="icon-box left media bg-deep p-30 mb-20"> <a class="media-left pull-left" href="#"> <i class="pe-7s-film text-theme-colored"></i></a>
                   <div class="media-body">
-                    <h5 class="mt-0">Make a Video Call</h5>
-                    <p>ThemeMascotSkype</p>
+                    <h5 class="mt-0">Facebook Connect</h5>
+                    <p>Target Media</p>
                   </div>
                 </div>
               </div>

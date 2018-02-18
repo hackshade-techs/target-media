@@ -5,9 +5,9 @@
         <div class="col-md-6">
           <div class="widget text-white">
             <ul class="list-inline xs-text-center text-white">
-              <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-white"></i> +256 772 651714</a> </li>
+              <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-white"></i> +211 912 312 228</a> </li>
               <li class="m-0 pl-10 pr-10">
-                <a href="#" class="text-white"><i class="fa fa-envelope-o text-white mr-5"></i> ambroselli@afrosoftug.com</a>
+                <a href="#" class="text-white"><i class="fa fa-envelope-o text-white mr-5"></i> info@targetmedia.biz </a>
               </li>
             </ul>
           </div>
@@ -39,8 +39,9 @@
       <div class="container p-0">
         <nav id="menuzord-right" class="menuzord default no-bg">
           <a class="menuzord-brand switchable-logo pull-left flip mb-15 mt-20" href="index-mp-layout1.html">
-            <img class="logo-default" src="assets/images/logo-wide-white.png" alt="">
-            <img class="logo-scrolled-to-fixed" src="assets/images/logo-wide.png" alt="">
+            <!-- <img class="logo-default" src="assets/images/logo-wide-white.png" alt="">
+            <img class="logo-scrolled-to-fixed" src="assets/images/logo-wide.png" alt=""> -->
+            <p style="color:#ffffff;"> TARGET MEDIA</p>
           </a>
           <ul class="menuzord-menu">
             <li class="active" ><a href="{{ url('/') }}">Home</a>
@@ -61,7 +62,7 @@
 
               </ul>
             </li>
-            <li><a href="#">Services</span></a>
+            <li><a href="#">What We Do</span></a>
               <ul class="dropdown">
                 <li><a href="features-preloader.html">Graphics Design </a></li>
                 <li><a href="features-preloader.html">Printing</a></li>
@@ -74,7 +75,7 @@
 
               </ul>
             </li>
-            <li><a href="#">What We Do</span></a>
+            <li><a href="#">Our Services</span></a>
               <ul class="dropdown">
                 <li><a href="features-preloader.html">T-Shirts </a></li>
                 <li><a href="features-preloader.html">Invitation Cards</a></li>
