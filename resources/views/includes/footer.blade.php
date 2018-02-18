@@ -5,11 +5,11 @@
         <div class="widget dark">
 
 <h4 class="widget-title">About Target Media</h4>
-          <p class="mt-20">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+          <p class="mt-20">Target media deals in a couple of services like advertising,branding.</p>
           <ul class="list-inline">
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-gray mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-gray mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
-            <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-gray mr-5"></i> <a class="text-gray" href="#">www.yourdomain.com</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-gray mr-5"></i> <a class="text-gray" href="#">+211 912 312 228</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-gray mr-5"></i> <a class="text-gray" href="#">info@targetmedia.biz</a> </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-gray mr-5"></i> <a class="text-gray" href="#">www.targetmedia.biz</a> </li>
           </ul>
           <ul class="styled-icons icon-sm icon-dark icon-theme-colored2 icon-circled clearfix mt-10">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -30,19 +30,19 @@
                   <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li><a href="#">What we do</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Latest Works</a></li>
                     <li><a href="#">Our Blog</a></li>
-                    <li><a href="#">FAQ</a></li>
+
                   </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                   <ul>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Finance</a></li>
-                    <li><a href="#">Consulting</a></li>
-                    <li><a href="#">Insurance</a></li>
-                    <li><a href="#">Professional</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">T-shirs</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Photograhy</a></li>
+                    <li><a href="#">Videography</a></li>
                   </ul>
                 </div>
               </div>
@@ -55,21 +55,21 @@
                 <article class="post media-post clearfix pb-0 mb-10">
                   <a class="post-thumb" href="#"><img src="../../../../../../placehold.it/80x55.png" alt=""></a>
                   <div class="post-right">
-                    <h5 class="post-title mt-0 mb-5"><a href="#">PHP Learning</a></h5>
+                    <h5 class="post-title mt-0 mb-5"><a href="#">Why brand a company?</a></h5>
                     <p class="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
                 </article>
                 <article class="post media-post clearfix pb-0 mb-10">
                   <a class="post-thumb" href="#"><img src="../../../../../../placehold.it/80x55.png" alt=""></a>
                   <div class="post-right">
-                    <h5 class="post-title mt-0 mb-5"><a href="#">Web Development</a></h5>
+                    <h5 class="post-title mt-0 mb-5"><a href="#">Printing secrets</a></h5>
                     <p class="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
                 </article>
                 <article class="post media-post clearfix pb-0 mb-10">
                   <a class="post-thumb" href="#"><img src="../../../../../../placehold.it/80x55.png" alt=""></a>
                   <div class="post-right">
-                    <h5 class="post-title mt-0 mb-5"><a href="#">Spoken English</a></h5>
+                    <h5 class="post-title mt-0 mb-5"><a href="#">Why you chose us</a></h5>
                     <p class="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
                 </article>
