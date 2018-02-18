@@ -13,6 +13,7 @@
 
 Route::get('/', 'PageController@welcome');
 Route::get('/services/{slug}', 'ServiceController@show');
+Route::resource('feedback', 'ContactController',['only' => 'store']);
 
 // --------------------
 // Backpack\Demo routes

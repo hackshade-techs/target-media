@@ -115,45 +115,40 @@
           </div>
           <div class="col-md-8">
             <h3 class="line-bottom mt-0 mb-30">Interested in discussing?</h3>
+            @include('includes.success')
             <!-- Contact Form -->
-            <form id="contact_form" name="contact_form" class="" action="http://thememascot.net/demo/personal/j/consulting-pro/demo/includes/sendmail.php" method="post">
-
+            <form  name="contact_form" class="" action="{{ route('feedback.store') }}" method="post">
+              {{ csrf_field() }}
               <div class="row">
                 <div class="col-sm-12">
                   <div class="form-group">
                     <label>Name <small>*</small></label>
-                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name" required="">
+                    <input name="name" class="form-control" type="text" placeholder="Enter Name" required>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group">
                     <label>Email <small>*</small></label>
-                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                    <input name="email" class="form-control required email" type="email" placeholder="Enter Email" required>
                   </div>
                 </div>
               </div>
 
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <div class="form-group">
                     <label>Subject <small>*</small></label>
-                    <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                    <input name="subject" class="form-control required" type="text" placeholder="Enter Subject" required>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label>Phone</label>
-                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
-                  </div>
-                </div>
+
               </div>
 
               <div class="form-group">
                 <label>Message</label>
-                <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                <textarea name="message" class="form-control required" rows="5" placeholder="Enter Message" required></textarea>
               </div>
               <div class="form-group">
-                <input name="form_botcheck" class="form-control" type="hidden" value="" />
                 <button type="submit" class="btn btn-dark btn-theme-colored btn-flat mr-5" data-loading-text="Please wait...">Send your message</button>
                 <button type="reset" class="btn btn-default btn-flat btn-theme-colored">Reset</button>
               </div>
