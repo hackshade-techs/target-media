@@ -18,8 +18,10 @@
     <h3 class="text-theme-colored">{{ $service->title }}</h3>
     <p> {!! substr($service->description,0,100) !!} </p>
     @if (strlen($service->description) > 100)
-      <a href="{{ url('/services/'.$service->slug) }}" class="btn btn-sm btn-theme-colored2 text-white mt-10 mb-30">Read more</a>
-    @endif
+      <!-- <a href="{{ url('/services/'.$service->slug) }}" class="btn btn-sm btn-theme-colored2 text-white mt-10 mb-30">Read more</a> -->
+      <a href="#" class="btn btn-sm btn-theme-colored2 text-white mt-10 mb-30">Read more</a>
+
+      @endif
 
   </div>
 @endforeach
