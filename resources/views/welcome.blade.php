@@ -523,16 +523,9 @@ T-shirts ,Caps, Pens, Uniforms (corporate shirts & blouses), umbrellas , Adhesiv
       <div class="col-md-12">
         <!-- Section: Clients -->
         <div class="owl-carousel-6col clients-logo transparent text-center">
-          <div class="item"> <a href="#"><img src="assets/images/clients/w1.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w2.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w3.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w4.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w5.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w6.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w3.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w5.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w4.png" alt=""></a></div>
-          <div class="item"> <a href="#"><img src="assets/images/clients/w6.png" alt=""></a></div>
+          <div class="item"> <a href="#"><img src="assets/images/slider/image.png" alt=""></a></div>
+          <div class="item"> <a href="#"><img src="assets/images/slider/zain.png" alt=""></a></div>
+
         </div>
       </div>
     </div>

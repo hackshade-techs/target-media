@@ -3,9 +3,8 @@
     <div class="row">
       <div class="col-md-3">
         <div class="widget dark">
-          <img alt="" src="images/logo-footer.png">
-          <p class="font-12 mt-20 mb-20">ThemeMascot is a library of corporate and business templates with predefined web elements which helps you to build your own site.</p>
-          <a class="btn btn-default btn-sm btn-transparent mt-0" href="#">Read More</a>
+
+<h4 class="widget-title">About Target Media</h4>
           <p class="mt-20">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
           <ul class="list-inline">
             <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-gray mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
@@ -100,66 +99,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="widget dark">
-              <h4 class="widget-title">Tags</h4>
-              <div class="tags">
-                <a href="#">travel</a>
-                <a href="#">blog</a>
-                <a href="#">lifestyle</a>
-                <a href="#">feature</a>
-                <a href="#">mountain</a>
-                <a href="#">design</a>
-                <a href="#">restaurant</a>
-                <a href="#">journey</a>
-                <a href="#">classic</a>
-                <a href="#">sunset</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="widget dark">
-              <h4 class="widget-title mb-25">Twitter Feed</h4>
-              <div class="twitter-feed-carousel clearfix" data-username="Envato" data-count="3"></div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="widget dark">
-              <h4 class="widget-title">Subscribe Now</h4>
-              <div class="widget-subscribe">
-                <h5 class="subscribe-title text-gray">To get latest news and update keep connected with us by mailing</h5>
-                <p class="subscribe-sub-title">Subscribe to Connect with us</p>
-                <form id="mailchimp-subscription-form2" class="newsletter-form mt-20  form-transparent" novalidate>
-                  <div class="input-group">
-                    <input value="" name="EMAIL" placeholder="Your Email" class="form-control" data-height="45px" id="mce-EMAIL" style="height: 45px;" type="email">
-                    <span class="input-group-btn">
-                      <button data-height="45px" class="btn btn-colored btn-theme-colored2 text-white m-0" type="submit"><i class="fa fa-paper-plane-o font-20"></i></button>
-                    </span>
-                  </div>
-                </form>
-                <!-- Mailchimp Subscription Form Validation-->
-                <script type="text/javascript">
-                  $('#mailchimp-subscription-form2').ajaxChimp({
-                      callback: mailChimpCallBack,
-                      url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
-                  });
 
-                  function mailChimpCallBack(resp) {
-                      // Hide any previous response text
-                      var $mailchimpform = $('#mailchimp-subscription-form2'),
-                          $response = '';
-                      $mailchimpform.children(".alert").remove();
-                      if (resp.result === 'success') {
-                          $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                      } else if (resp.result === 'error') {
-                          $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                      }
-                      $mailchimpform.prepend($response);
-                  }
-                </script>
-              </div>
-            </div>
-          </div>
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -168,7 +113,7 @@
     <div class="container pt-20 pb-20">
       <div class="row">
         <div class="col-md-6">
-          <p class="font-12 sm-text-center text-black-777 m-0">Copyright &copy;2017 ThemeMascot. All Rights Reserved</p>
+          <p class="font-12 sm-text-center text-black-777 m-0">Copyright &copy;2017 Target Media. All Rights Reserved</p>
         </div>
         <div class="col-md-6 text-right">
           <div class="widget no-border m-0">
@@ -178,7 +123,7 @@
               </li>
               <li>|</li>
               <li>
-                <a href="#">Help Desk</a>
+                <a href="#">Contact</a>
               </li>
               <li>|</li>
               <li>

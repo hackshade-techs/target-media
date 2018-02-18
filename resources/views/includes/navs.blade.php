@@ -25,9 +25,9 @@
         </div>
         <div class="col-md-2">
           <ul class="list-inline sm-pull-none sm-text-center text-right text-white mb-sm-20 mt-10">
-            <li class="m-0 pl-10"> <a href="ajax-load/login-form.html" class="text-white ajaxload-popup"><i class="fa fa-user-o mr-5 text-white"></i> Login /</a> </li>
+            <li class="m-0 pl-10"> <a href="#" class="text-white ajaxload-popup"><i class="fa fa-user-o mr-5 text-white"></i> Login /</a> </li>
             <li class="m-0 pl-0 pr-10">
-              <a href="ajax-load/register-form.html" class="text-white ajaxload-popup"><i class="fa fa-edit mr-5"></i>Register</a>
+              <a href="#" class="text-white ajaxload-popup"><i class="fa fa-edit mr-5"></i>Register</a>
             </li>
           </ul>
         </div>
@@ -49,10 +49,10 @@
             </li>
             <li><a href="#">About Us</span></a>
               <ul class="dropdown">
-                <li><a href="features-preloader.html">About Us </a></li>
-                <li><a href="features-preloader.html">Our Staff</a></li>
-                <li><a href="features-preloader.html">Vision and Mission</a></li>
-                <li><a href="features-preloader.html">Core Values</a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Our Staff</a></li>
+                <li><a href="#">Vision and Mission</a></li>
+                <li><a href="#">Core Values</a></li>
 
 
 
@@ -64,19 +64,19 @@
             </li>
             <li><a href="#">What We Do</span></a>
               <ul class="dropdown">
-                <li><a href="features-preloader.html">Graphics Design </a></li>
-                <li><a href="features-preloader.html">Printing</a></li>
-                <li><a href="features-preloader.html">Fabrics</a></li>
-                <li><a href="features-preloader.html">Photograhy and Videography</a></li>
-                <li><a href="features-preloader.html">Garden/Events</a></li>
-                <li><a href="features-preloader.html">Branding</a></li>
-                <li><a href="features-preloader.html">Mementos</a></li>
+                <li><a href="#">Graphics Design </a></li>
+                <li><a href="#">Printing</a></li>
+                <li><a href="#">Fabrics</a></li>
+                <li><a href="#">Photograhy and Videography</a></li>
+                <li><a href="#">Garden/Events</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Mementos</a></li>
 
 
               </ul>
             </li>
-            <li><a href="#">Our Services</span></a>
-              <ul class="dropdown">
+            <li><a href="{{ url('services') }}">Our Services</span></a>
+              <!-- <ul class="dropdown">
                 <li><a href="features-preloader.html">T-Shirts </a></li>
                 <li><a href="features-preloader.html">Invitation Cards</a></li>
                 <li><a href="features-preloader.html">Calendars</a></li>
@@ -90,7 +90,7 @@
 
 
 
-              </ul>
+              </ul> -->
             </li>
 
 

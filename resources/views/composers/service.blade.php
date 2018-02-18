@@ -3,13 +3,13 @@
     <div class="box-hover-effect">
       <div class="effect-wrapper">
         <div class="thumb">
-          <img class="img-fullwidth" src="assets/images/about/ab1.jpg" alt="project">
+          <img class="img-fullwidth" src="{{ $service->image }}" alt="project">
         </div>
         <div class="overlay-shade"></div>
         <div class="icons-holder icons-holder-middle">
           <div class="icons-holder-inner">
             <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored2">
-              <a href="assets/images/about/ab1.jpg" data-lightbox-gallery="gallery1" title="Your Title Here"><i class="fa fa-picture-o"></i></a>
+              <a href="{{ $service->image }}" data-lightbox-gallery="gallery1" title="Your Title Here"><i class="fa fa-picture-o"></i></a>
             </div>
           </div>
         </div>
