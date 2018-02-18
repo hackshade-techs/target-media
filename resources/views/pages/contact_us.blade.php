@@ -46,28 +46,12 @@
     <section>
       <div class="container-fluid pt-0 pb-0">
         <div class="row">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31804.13255049945!2d31.569341031708515!3d4.852722972328266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf269892f5cc7634f!2sKCB+Buluk!5e0!3m2!1sen!2sug!4v1518971962793" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           <!-- Google Map HTML Codes -->
-          <div
-            data-address="121 King Street, Melbourne Victoria 3000 Australia"
-            data-popupstring-id="#popupstring1"
-            class="map-canvas autoload-map"
-            data-mapstyle="style2"
-            data-height="400"
-            data-latlng="-37.817314,144.955431"
-            data-title="sample title"
-            data-zoom="12"
-            data-marker="assets/images/map-marker.png">
+
           </div>
-          <div class="map-popupstring hidden" id="popupstring1">
-            <div class="text-center">
-              <h3>ThemeMascot Office</h3>
-              <p>121 King Street, Melbourne Victoria 3000 Australia</p>
-            </div>
-          </div>
+
           <!-- Google Map Javascript Codes -->
-          <script src="http://maps.google.com/maps/api/js?key=AIzaSyAYWE4mHmR9GyPsHSOVZrSCOOljk8DU9B4"></script>
-          <script src="js/google-map-init.js"></script>
 
         </div>
       </div>
